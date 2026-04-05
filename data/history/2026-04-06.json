@@ -1,0 +1,480 @@
+[
+  {
+    "run_id": "20260406-010624-IST",
+    "run_timestamp_utc": "2026-04-05T19:36:24Z",
+    "run_timestamp_ist": "2026-04-06 01:06:24 IST",
+    "overall_status": "SOME_DOWN",
+    "targets": [
+      {
+        "name": "n8n (Yash)",
+        "url": "https://n8n.yashlunawat.com",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 533,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://n8n.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "533ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "tools",
+          "automation"
+        ]
+      },
+      {
+        "name": "Rishiverse (Production)",
+        "url": "https://rishiverse.rishihood.edu.in",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 194,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://rishiverse.rishihood.edu.in/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "194ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "rishihood",
+          "frontend",
+          "production"
+        ]
+      },
+      {
+        "name": "Rishiverse (Test)",
+        "url": "https://test.rishiverse.rishihood.edu.in",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 332,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://test.rishiverse.rishihood.edu.in/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "332ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "rishihood",
+          "frontend",
+          "test"
+        ]
+      },
+      {
+        "name": "Rishiverse API",
+        "url": "https://rishiverse-api.rishihood.edu.in",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 244,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://rishiverse-api.rishihood.edu.in/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "244ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "FAIL",
+            "detail": "Expected JSON but Content-Type is 'text/html; charset=utf-8'"
+          }
+        },
+        "error": null,
+        "tags": [
+          "rishihood",
+          "api",
+          "production"
+        ]
+      },
+      {
+        "name": "API Test Portal",
+        "url": "https://apitestportal.rishihood.edu.in",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 245,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://apitestportal.rishihood.edu.in/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "245ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "FAIL",
+            "detail": "Expected JSON but Content-Type is 'text/html; charset=utf-8'"
+          }
+        },
+        "error": null,
+        "tags": [
+          "rishihood",
+          "api",
+          "test"
+        ]
+      },
+      {
+        "name": "Yash Portfolio",
+        "url": "https://yashlunawat.com",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 1609,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [
+          "https://yashlunawat.com/"
+        ],
+        "final_url": "https://www.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "WARN",
+            "detail": "1609ms (warn threshold 1000ms)"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "Redirected via 1 hop(s) to https://www.yashlunawat.com/"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "portfolio"
+        ]
+      },
+      {
+        "name": "Subdomain Finder",
+        "url": "https://subdomainfinder.yashlunawat.com",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 1356,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://subdomainfinder.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "WARN",
+            "detail": "1356ms (warn threshold 1000ms)"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "tools"
+        ]
+      },
+      {
+        "name": "Air Quality Prediction",
+        "url": "https://air-quality-prediction.yashlunawat.com/",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 1350,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://air-quality-prediction.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "WARN",
+            "detail": "1350ms (warn threshold 1000ms)"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "ml",
+          "projects"
+        ]
+      },
+      {
+        "name": "Stock Analyser",
+        "url": "https://stock-analysier.yashlunawat.com",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 1555,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://stock-analysier.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "WARN",
+            "detail": "1555ms (warn threshold 1000ms)"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "ml",
+          "projects"
+        ]
+      },
+      {
+        "name": "Cup Scheduling Visualizer",
+        "url": "https://cup-scheduling-visualizer.yashlunawat.com",
+        "status": "DOWN",
+        "timestamp_utc": "2026-04-05T19:36:24Z",
+        "timestamp_ist": "2026-04-06 01:06:24 IST",
+        "latency_ms": 1560,
+        "http_status": 200,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": "https://cup-scheduling-visualizer.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "WARN",
+            "detail": "1560ms (warn threshold 1000ms)"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "FAIL",
+            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "tools",
+          "projects"
+        ]
+      }
+    ]
+  }
+]

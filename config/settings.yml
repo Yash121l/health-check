@@ -1,0 +1,9 @@
+global:
+  latency_warn_ms: 1000
+  latency_fail_ms: 2000
+  timeout_s: 10
+  ssl_warn_days: 14
+  check_interval_cron: "*/5 * * * *"
+  retention_days: 90
+  dashboard_title: "Yash & Rishihood — Service Status"
+  timezone: "Asia/Kolkata"

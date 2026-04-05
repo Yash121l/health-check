@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yash &amp; Rishihood — Service Status</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <h1 class="site-title">Yash &amp; Rishihood — Service Status</h1>
+        <div class="last-updated">Last updated: 2026-04-06 01:06:24 IST</div>
+      </div>
+      <div class="overall-badge overall-down">OUTAGE DETECTED</div>
+    </div>
+    <div class="status-summary">
+      <span class="summary-item summary-up">0 UP</span>
+      <span class="summary-item summary-degraded">0 DEGRADED</span>
+      <span class="summary-item summary-down">10 DOWN</span>
+      <span class="summary-item summary-total">of 10 targets</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="targets-section">
+      <h2 class="section-title">Service Health</h2>
+      <div class="card-grid">
+        
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://n8n.yashlunawat.com" target="_blank" rel="noopener">n8n (Yash)</a>
+        <div class="card-url">https://n8n.yashlunawat.com</div>
+        <div class="card-tags"><span class="tag">yash</span><span class="tag">tools</span><span class="tag">automation</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>533ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">533ms</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-0" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-0');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [533],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://rishiverse.rishihood.edu.in" target="_blank" rel="noopener">Rishiverse (Production)</a>
+        <div class="card-url">https://rishiverse.rishihood.edu.in</div>
+        <div class="card-tags"><span class="tag">rishihood</span><span class="tag">frontend</span><span class="tag">production</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>194ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">194ms</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-1" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-1');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [194],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://test.rishiverse.rishihood.edu.in" target="_blank" rel="noopener">Rishiverse (Test)</a>
+        <div class="card-url">https://test.rishiverse.rishihood.edu.in</div>
+        <div class="card-tags"><span class="tag">rishihood</span><span class="tag">frontend</span><span class="tag">test</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>332ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">332ms</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-2" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-2');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [332],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://rishiverse-api.rishihood.edu.in" target="_blank" rel="noopener">Rishiverse API</a>
+        <div class="card-url">https://rishiverse-api.rishihood.edu.in</div>
+        <div class="card-tags"><span class="tag">rishihood</span><span class="tag">api</span><span class="tag">production</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>244ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">244ms</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">Expected JSON but Content-Type is &#x27;text/html; charset=utf-8&#x27;</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-3" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-3');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [244],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://apitestportal.rishihood.edu.in" target="_blank" rel="noopener">API Test Portal</a>
+        <div class="card-url">https://apitestportal.rishihood.edu.in</div>
+        <div class="card-tags"><span class="tag">rishihood</span><span class="tag">api</span><span class="tag">test</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>245ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">245ms</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">Expected JSON but Content-Type is &#x27;text/html; charset=utf-8&#x27;</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-4" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-4');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [245],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://yashlunawat.com" target="_blank" rel="noopener">Yash Portfolio</a>
+        <div class="card-url">https://yashlunawat.com</div>
+        <div class="card-tags"><span class="tag">yash</span><span class="tag">portfolio</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>1609ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-warn">⚠</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">1609ms (warn threshold 1000ms)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">Redirected via 1 hop(s) to https://www.yashlunawat.com/</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-5" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-5');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [1609],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://subdomainfinder.yashlunawat.com" target="_blank" rel="noopener">Subdomain Finder</a>
+        <div class="card-url">https://subdomainfinder.yashlunawat.com</div>
+        <div class="card-tags"><span class="tag">yash</span><span class="tag">tools</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>1356ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-warn">⚠</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">1356ms (warn threshold 1000ms)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-6" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-6');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [1356],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://air-quality-prediction.yashlunawat.com/" target="_blank" rel="noopener">Air Quality Prediction</a>
+        <div class="card-url">https://air-quality-prediction.yashlunawat.com/</div>
+        <div class="card-tags"><span class="tag">yash</span><span class="tag">ml</span><span class="tag">projects</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>1350ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-warn">⚠</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">1350ms (warn threshold 1000ms)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-7" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-7');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [1350],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://stock-analysier.yashlunawat.com" target="_blank" rel="noopener">Stock Analyser</a>
+        <div class="card-url">https://stock-analysier.yashlunawat.com</div>
+        <div class="card-tags"><span class="tag">yash</span><span class="tag">ml</span><span class="tag">projects</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>1555ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-warn">⚠</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">1555ms (warn threshold 1000ms)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-8" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-8');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [1555],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+  <div class="target-card card-down">
+    <div class="card-header">
+      <div class="card-title">
+        <a href="https://cup-scheduling-visualizer.yashlunawat.com" target="_blank" rel="noopener">Cup Scheduling Visualizer</a>
+        <div class="card-url">https://cup-scheduling-visualizer.yashlunawat.com</div>
+        <div class="card-tags"><span class="tag">yash</span><span class="tag">tools</span><span class="tag">projects</span></div>
+      </div>
+      <span class="badge badge-down">DOWN</span>
+    </div>
+    <div class="card-meta">
+      <span>Latency: <strong>1560ms</strong></span>
+      <span>SSL: <strong>N/A</strong>
+        
+      </span>
+    </div>
+    
+    <div class="checks">
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">HTTP</span>
+          <span class="check-detail">HTTP 200 (expected 200)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-warn">⚠</span>
+          <span class="check-label">Latency</span>
+          <span class="check-detail">1560ms (warn threshold 1000ms)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">Keyword</span>
+          <span class="check-detail">No keyword configured</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-fail">✗</span>
+          <span class="check-label">SSL</span>
+          <span class="check-detail">SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-pass">✓</span>
+          <span class="check-label">Redirect</span>
+          <span class="check-detail">No redirect</span>
+        </div>
+        <div class="check-row">
+          <span class="chk-na">–</span>
+          <span class="check-label">JSON Schema</span>
+          <span class="check-detail">No JSON schema check configured</span>
+        </div>
+    </div>
+    
+      <div class="chart-container">
+        <canvas id="chart-9" height="60"></canvas>
+      </div>
+      <script>
+      (function() {
+        var ctx = document.getElementById('chart-9');
+        if (!ctx) return;
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["6:24 "],
+            datasets: [{
+              label: 'Latency (ms)',
+              data: [1560],
+              borderColor: '#60a5fa',
+              backgroundColor: 'rgba(96,165,250,0.1)',
+              borderWidth: 1.5,
+              pointRadius: 2,
+              tension: 0.3,
+              fill: true,
+              spanGaps: true
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+              x: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' }
+              },
+              y: {
+                ticks: { color: '#9ca3af', font: { size: 10 } },
+                grid: { color: '#1f2937' },
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      })();
+      </script>
+  </div>
+      </div>
+    </section>
+
+    <section class="uptime-section">
+      <h2 class="section-title">30-Day Uptime History</h2>
+      <div class="uptime-legend">
+        <span class="uptime-ok">● ≥99%</span>
+        <span class="uptime-warn">● 90–99%</span>
+        <span class="uptime-down">● &lt;90%</span>
+        <span class="uptime-nodata">– No data</span>
+      </div>
+      <div class="uptime-scroll">
+        
+  <table class="uptime-table">
+    <thead><tr><th>Target</th><th title="2026-03-08">03-08</th><th title="2026-03-09">03-09</th><th title="2026-03-10">03-10</th><th title="2026-03-11">03-11</th><th title="2026-03-12">03-12</th><th title="2026-03-13">03-13</th><th title="2026-03-14">03-14</th><th title="2026-03-15">03-15</th><th title="2026-03-16">03-16</th><th title="2026-03-17">03-17</th><th title="2026-03-18">03-18</th><th title="2026-03-19">03-19</th><th title="2026-03-20">03-20</th><th title="2026-03-21">03-21</th><th title="2026-03-22">03-22</th><th title="2026-03-23">03-23</th><th title="2026-03-24">03-24</th><th title="2026-03-25">03-25</th><th title="2026-03-26">03-26</th><th title="2026-03-27">03-27</th><th title="2026-03-28">03-28</th><th title="2026-03-29">03-29</th><th title="2026-03-30">03-30</th><th title="2026-03-31">03-31</th><th title="2026-04-01">04-01</th><th title="2026-04-02">04-02</th><th title="2026-04-03">04-03</th><th title="2026-04-04">04-04</th><th title="2026-04-05">04-05</th><th title="2026-04-06">04-06</th><th>30d Avg</th></tr></thead>
+    <tbody><tr><td>n8n (Yash)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Rishiverse (Production)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Rishiverse (Test)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Rishiverse API</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>API Test Portal</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Yash Portfolio</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Subdomain Finder</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Air Quality Prediction</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Stock Analyser</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr><tr><td>Cup Scheduling Visualizer</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-down" title="0.0%">●</td><td class="uptime-avg uptime-down">0.0%</td></tr></tbody>
+  </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Powered by <a href="https://github.com/features/actions" target="_blank"
+      rel="noopener">GitHub Actions</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/Yash121l/health-check" target="_blank"
+      rel="noopener">health-check repo</a>
+  </footer>
+</body>
+</html>

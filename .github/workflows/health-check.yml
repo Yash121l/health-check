@@ -1,0 +1,74 @@
+name: Health Check
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: "Enable debug output"
+        required: false
+        default: "false"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: health-check
+  cancel-in-progress: false
+
+jobs:
+  run-checks:
+    name: Run Health Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run health checks
+        run: python scripts/check.py
+        env:
+          DEBUG: ${{ github.event.inputs.debug }}
+
+      - name: Send notifications
+        run: python scripts/notify.py
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Build status dashboard
+        run: python scripts/build_dashboard.py
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/ docs/
+
+          # Only commit if there are actual changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit — skipping"
+            exit 0
+          fi
+
+          TIMESTAMP=$(TZ="Asia/Kolkata" date "+%Y-%m-%d %H:%M IST")
+          git commit -m "chore: health check ${TIMESTAMP}"
+          git push origin main

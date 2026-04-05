@@ -1,0 +1,114 @@
+targets:
+  - name: "n8n (Yash)"
+    url: "https://n8n.yashlunawat.com"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["yash", "tools", "automation"]
+
+  - name: "Rishiverse (Production)"
+    url: "https://rishiverse.rishihood.edu.in"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["rishihood", "frontend", "production"]
+
+  - name: "Rishiverse (Test)"
+    url: "https://test.rishiverse.rishihood.edu.in"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["rishihood", "frontend", "test"]
+
+  - name: "Rishiverse API"
+    url: "https://rishiverse-api.rishihood.edu.in"
+    method: GET
+    headers:
+      Accept: "application/json"
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys:
+      - "status"
+    allow_self_signed: false
+    tags: ["rishihood", "api", "production"]
+
+  - name: "API Test Portal"
+    url: "https://apitestportal.rishihood.edu.in"
+    method: GET
+    headers:
+      Accept: "application/json"
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys:
+      - "status"
+    allow_self_signed: false
+    tags: ["rishihood", "api", "test"]
+
+  - name: "Yash Portfolio"
+    url: "https://yashlunawat.com"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["yash", "portfolio"]
+
+  - name: "Subdomain Finder"
+    url: "https://subdomainfinder.yashlunawat.com"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["yash", "tools"]
+
+  - name: "Air Quality Prediction"
+    url: "https://air-quality-prediction.yashlunawat.com/"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["yash", "ml", "projects"]
+
+  - name: "Stock Analyser"
+    url: "https://stock-analysier.yashlunawat.com"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["yash", "ml", "projects"]
+
+  - name: "Cup Scheduling Visualizer"
+    url: "https://cup-scheduling-visualizer.yashlunawat.com"
+    method: GET
+    headers: {}
+    expected_status: 200
+    expected_keyword: ""
+    expected_final_url: ""
+    expected_json_keys: []
+    allow_self_signed: false
+    tags: ["yash", "tools", "projects"]
