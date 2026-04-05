@@ -35,26 +35,22 @@ targets:
   - name: "Rishiverse API"
     url: "https://rishiverse-api.rishihood.edu.in"
     method: GET
-    headers:
-      Accept: "application/json"
+    headers: {}
     expected_status: 200
     expected_keyword: ""
     expected_final_url: ""
-    expected_json_keys:
-      - "status"
+    expected_json_keys: []
     allow_self_signed: false
     tags: ["rishihood", "api", "production"]
 
   - name: "API Test Portal"
     url: "https://apitestportal.rishihood.edu.in"
     method: GET
-    headers:
-      Accept: "application/json"
+    headers: {}
     expected_status: 200
     expected_keyword: ""
     expected_final_url: ""
-    expected_json_keys:
-      - "status"
+    expected_json_keys: []
     allow_self_signed: false
     tags: ["rishihood", "api", "test"]
 

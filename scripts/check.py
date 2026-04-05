@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.parse import urlparse
 
+import certifi
 import requests
 import yaml
 from OpenSSL import crypto
@@ -52,7 +53,7 @@ def get_ssl_info(hostname: str, port: int = 443,
     """Return SSL expiry info for a hostname."""
     result = {"days_remaining": None, "expiry_date": None, "error": None}
     try:
-        ctx = ssl.create_default_context()
+        ctx = ssl.create_default_context(cafile=certifi.where())
         with ctx.wrap_socket(
             socket.create_connection((hostname, port), timeout=timeout),
             server_hostname=hostname,
