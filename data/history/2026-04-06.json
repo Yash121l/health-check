@@ -1,507 +1,17 @@
 [
   {
-    "run_id": "20260406-010624-IST",
-    "run_timestamp_utc": "2026-04-05T19:36:24Z",
-    "run_timestamp_ist": "2026-04-06 01:06:24 IST",
-    "overall_status": "SOME_DOWN",
-    "targets": [
-      {
-        "name": "n8n (Yash)",
-        "url": "https://n8n.yashlunawat.com",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 533,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://n8n.yashlunawat.com/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "PASS",
-            "detail": "533ms"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "yash",
-          "tools",
-          "automation"
-        ]
-      },
-      {
-        "name": "Rishiverse (Production)",
-        "url": "https://rishiverse.rishihood.edu.in",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 194,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://rishiverse.rishihood.edu.in/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "PASS",
-            "detail": "194ms"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "rishihood",
-          "frontend",
-          "production"
-        ]
-      },
-      {
-        "name": "Rishiverse (Test)",
-        "url": "https://test.rishiverse.rishihood.edu.in",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 332,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://test.rishiverse.rishihood.edu.in/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "PASS",
-            "detail": "332ms"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "rishihood",
-          "frontend",
-          "test"
-        ]
-      },
-      {
-        "name": "Rishiverse API",
-        "url": "https://rishiverse-api.rishihood.edu.in",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 244,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://rishiverse-api.rishihood.edu.in/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "PASS",
-            "detail": "244ms"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "FAIL",
-            "detail": "Expected JSON but Content-Type is 'text/html; charset=utf-8'"
-          }
-        },
-        "error": null,
-        "tags": [
-          "rishihood",
-          "api",
-          "production"
-        ]
-      },
-      {
-        "name": "API Test Portal",
-        "url": "https://apitestportal.rishihood.edu.in",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 245,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://apitestportal.rishihood.edu.in/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "PASS",
-            "detail": "245ms"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "FAIL",
-            "detail": "Expected JSON but Content-Type is 'text/html; charset=utf-8'"
-          }
-        },
-        "error": null,
-        "tags": [
-          "rishihood",
-          "api",
-          "test"
-        ]
-      },
-      {
-        "name": "Yash Portfolio",
-        "url": "https://yashlunawat.com",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 1609,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [
-          "https://yashlunawat.com/"
-        ],
-        "final_url": "https://www.yashlunawat.com/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "WARN",
-            "detail": "1609ms (warn threshold 1000ms)"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "Redirected via 1 hop(s) to https://www.yashlunawat.com/"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "yash",
-          "portfolio"
-        ]
-      },
-      {
-        "name": "Subdomain Finder",
-        "url": "https://subdomainfinder.yashlunawat.com",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 1356,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://subdomainfinder.yashlunawat.com/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "WARN",
-            "detail": "1356ms (warn threshold 1000ms)"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "yash",
-          "tools"
-        ]
-      },
-      {
-        "name": "Air Quality Prediction",
-        "url": "https://air-quality-prediction.yashlunawat.com/",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 1350,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://air-quality-prediction.yashlunawat.com/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "WARN",
-            "detail": "1350ms (warn threshold 1000ms)"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "yash",
-          "ml",
-          "projects"
-        ]
-      },
-      {
-        "name": "Stock Analyser",
-        "url": "https://stock-analysier.yashlunawat.com",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 1555,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://stock-analysier.yashlunawat.com/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "WARN",
-            "detail": "1555ms (warn threshold 1000ms)"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "yash",
-          "ml",
-          "projects"
-        ]
-      },
-      {
-        "name": "Cup Scheduling Visualizer",
-        "url": "https://cup-scheduling-visualizer.yashlunawat.com",
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:36:24Z",
-        "timestamp_ist": "2026-04-06 01:06:24 IST",
-        "latency_ms": 1560,
-        "http_status": 200,
-        "ssl_days_remaining": null,
-        "ssl_expiry_date": null,
-        "redirect_chain": [],
-        "final_url": "https://cup-scheduling-visualizer.yashlunawat.com/",
-        "keyword_found": null,
-        "json_keys_missing": null,
-        "checks": {
-          "http_status": {
-            "status": "PASS",
-            "detail": "HTTP 200 (expected 200)"
-          },
-          "latency": {
-            "status": "WARN",
-            "detail": "1560ms (warn threshold 1000ms)"
-          },
-          "keyword": {
-            "status": "N/A",
-            "detail": "No keyword configured"
-          },
-          "ssl": {
-            "status": "FAIL",
-            "detail": "SSL verification error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)"
-          },
-          "redirect": {
-            "status": "PASS",
-            "detail": "No redirect"
-          },
-          "json_schema": {
-            "status": "N/A",
-            "detail": "No JSON schema check configured"
-          }
-        },
-        "error": null,
-        "tags": [
-          "yash",
-          "tools",
-          "projects"
-        ]
-      }
-    ]
-  },
-  {
-<<<<<<< HEAD
-    "run_id": "20260406-011052-IST",
-    "run_timestamp_utc": "2026-04-05T19:40:52Z",
-    "run_timestamp_ist": "2026-04-06 01:10:52 IST",
-=======
-    "run_id": "20260406-011608-IST",
-    "run_timestamp_utc": "2026-04-05T19:46:08Z",
-    "run_timestamp_ist": "2026-04-06 01:16:08 IST",
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
-    "overall_status": "SOME_DOWN",
+    "run_id": "20260406-012132-IST",
+    "run_timestamp_utc": "2026-04-05T19:51:32Z",
+    "run_timestamp_ist": "2026-04-06 01:21:32 IST",
+    "overall_status": "ALL_UP",
     "targets": [
       {
         "name": "n8n (Yash)",
         "url": "https://n8n.yashlunawat.com",
         "status": "UP",
-<<<<<<< HEAD
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 735,
-=======
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 285,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 232,
         "http_status": 200,
         "ssl_days_remaining": 89,
         "ssl_expiry_date": "2026-07-04",
@@ -516,11 +26,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "735ms"
-=======
-            "detail": "285ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "232ms"
           },
           "keyword": {
             "status": "N/A",
@@ -550,15 +56,9 @@
         "name": "Rishiverse (Production)",
         "url": "https://rishiverse.rishihood.edu.in",
         "status": "UP",
-<<<<<<< HEAD
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 176,
-=======
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 387,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 231,
         "http_status": 200,
         "ssl_days_remaining": 74,
         "ssl_expiry_date": "2026-06-19",
@@ -573,11 +73,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "176ms"
-=======
-            "detail": "387ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "231ms"
           },
           "keyword": {
             "status": "N/A",
@@ -607,15 +103,9 @@
         "name": "Rishiverse (Test)",
         "url": "https://test.rishiverse.rishihood.edu.in",
         "status": "UP",
-<<<<<<< HEAD
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 359,
-=======
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 483,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 232,
         "http_status": 200,
         "ssl_days_remaining": 83,
         "ssl_expiry_date": "2026-06-28",
@@ -630,11 +120,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "359ms"
-=======
-            "detail": "483ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "232ms"
           },
           "keyword": {
             "status": "N/A",
@@ -663,17 +149,10 @@
       {
         "name": "Rishiverse API",
         "url": "https://rishiverse-api.rishihood.edu.in",
-<<<<<<< HEAD
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 762,
-=======
         "status": "UP",
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 427,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 231,
         "http_status": 200,
         "ssl_days_remaining": 62,
         "ssl_expiry_date": "2026-06-06",
@@ -688,11 +167,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "762ms"
-=======
-            "detail": "427ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "231ms"
           },
           "keyword": {
             "status": "N/A",
@@ -707,13 +182,8 @@
             "detail": "No redirect"
           },
           "json_schema": {
-<<<<<<< HEAD
-            "status": "FAIL",
-            "detail": "Expected JSON but Content-Type is 'text/html; charset=utf-8'"
-=======
             "status": "N/A",
             "detail": "No JSON schema check configured"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
           }
         },
         "error": null,
@@ -726,17 +196,10 @@
       {
         "name": "API Test Portal",
         "url": "https://apitestportal.rishihood.edu.in",
-<<<<<<< HEAD
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 706,
-=======
         "status": "UP",
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 427,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 232,
         "http_status": 200,
         "ssl_days_remaining": 290,
         "ssl_expiry_date": "2027-01-20",
@@ -751,11 +214,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "706ms"
-=======
-            "detail": "427ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "232ms"
           },
           "keyword": {
             "status": "N/A",
@@ -770,13 +229,8 @@
             "detail": "No redirect"
           },
           "json_schema": {
-<<<<<<< HEAD
-            "status": "FAIL",
-            "detail": "Expected JSON but Content-Type is 'text/html; charset=utf-8'"
-=======
             "status": "N/A",
             "detail": "No JSON schema check configured"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
           }
         },
         "error": null,
@@ -789,17 +243,10 @@
       {
         "name": "Yash Portfolio",
         "url": "https://yashlunawat.com",
-<<<<<<< HEAD
         "status": "UP",
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 362,
-=======
-        "status": "DOWN",
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 2283,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 887,
         "http_status": 200,
         "ssl_days_remaining": 86,
         "ssl_expiry_date": "2026-07-01",
@@ -815,13 +262,8 @@
             "detail": "HTTP 200 (expected 200)"
           },
           "latency": {
-<<<<<<< HEAD
             "status": "PASS",
-            "detail": "362ms"
-=======
-            "status": "FAIL",
-            "detail": "2283ms (fail threshold 2000ms)"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "887ms"
           },
           "keyword": {
             "status": "N/A",
@@ -849,17 +291,10 @@
       {
         "name": "Subdomain Finder",
         "url": "https://subdomainfinder.yashlunawat.com",
-<<<<<<< HEAD
         "status": "UP",
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 239,
-=======
-        "status": "DEGRADED",
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 1095,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 434,
         "http_status": 200,
         "ssl_days_remaining": 34,
         "ssl_expiry_date": "2026-05-10",
@@ -873,13 +308,8 @@
             "detail": "HTTP 200 (expected 200)"
           },
           "latency": {
-<<<<<<< HEAD
             "status": "PASS",
-            "detail": "239ms"
-=======
-            "status": "WARN",
-            "detail": "1095ms (warn threshold 1000ms)"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "434ms"
           },
           "keyword": {
             "status": "N/A",
@@ -907,17 +337,10 @@
       {
         "name": "Air Quality Prediction",
         "url": "https://air-quality-prediction.yashlunawat.com/",
-<<<<<<< HEAD
         "status": "UP",
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 349,
-=======
-        "status": "DEGRADED",
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 1109,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 886,
         "http_status": 200,
         "ssl_days_remaining": 33,
         "ssl_expiry_date": "2026-05-09",
@@ -931,13 +354,8 @@
             "detail": "HTTP 200 (expected 200)"
           },
           "latency": {
-<<<<<<< HEAD
             "status": "PASS",
-            "detail": "349ms"
-=======
-            "status": "WARN",
-            "detail": "1109ms (warn threshold 1000ms)"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "886ms"
           },
           "keyword": {
             "status": "N/A",
@@ -967,15 +385,9 @@
         "name": "Stock Analyser",
         "url": "https://stock-analysier.yashlunawat.com",
         "status": "UP",
-<<<<<<< HEAD
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 424,
-=======
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 711,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 517,
         "http_status": 200,
         "ssl_days_remaining": 89,
         "ssl_expiry_date": "2026-07-04",
@@ -990,11 +402,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "424ms"
-=======
-            "detail": "711ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "517ms"
           },
           "keyword": {
             "status": "N/A",
@@ -1024,15 +432,9 @@
         "name": "Cup Scheduling Visualizer",
         "url": "https://cup-scheduling-visualizer.yashlunawat.com",
         "status": "UP",
-<<<<<<< HEAD
-        "timestamp_utc": "2026-04-05T19:40:52Z",
-        "timestamp_ist": "2026-04-06 01:10:52 IST",
-        "latency_ms": 371,
-=======
-        "timestamp_utc": "2026-04-05T19:46:08Z",
-        "timestamp_ist": "2026-04-06 01:16:08 IST",
-        "latency_ms": 977,
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+        "timestamp_utc": "2026-04-05T19:51:32Z",
+        "timestamp_ist": "2026-04-06 01:21:32 IST",
+        "latency_ms": 887,
         "http_status": 200,
         "ssl_days_remaining": 33,
         "ssl_expiry_date": "2026-05-09",
@@ -1047,11 +449,7 @@
           },
           "latency": {
             "status": "PASS",
-<<<<<<< HEAD
-            "detail": "371ms"
-=======
-            "detail": "977ms"
->>>>>>> 10a6aed (fix: use certifi CA bundle for SSL checks; clean up API target configs)
+            "detail": "887ms"
           },
           "keyword": {
             "status": "N/A",

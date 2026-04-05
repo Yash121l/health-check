@@ -71,4 +71,20 @@ jobs:
 
           TIMESTAMP=$(TZ="Asia/Kolkata" date "+%Y-%m-%d %H:%M IST")
           git commit -m "chore: health check ${TIMESTAMP}"
-          git push origin main
+
+          # Pull remote changes and rebase our commit on top before pushing.
+          # This handles the case where another run pushed between our checkout
+          # and now, which would otherwise cause a push rejection or merge conflict.
+          # Retry up to 3 times with fresh rebase each attempt.
+          for attempt in 1 2 3; do
+            echo "Push attempt ${attempt}..."
+            git pull --rebase origin main || {
+              echo "Rebase failed — aborting and retrying"
+              git rebase --abort 2>/dev/null || true
+              sleep $((attempt * 5))
+              continue
+            }
+            git push origin main && break
+            echo "Push rejected on attempt ${attempt}, re-pulling..."
+            sleep $((attempt * 5))
+          done
