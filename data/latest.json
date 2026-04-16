@@ -1,16 +1,16 @@
 {
-  "run_id": "20260416-213522-IST",
-  "run_timestamp_utc": "2026-04-16T16:05:22Z",
-  "run_timestamp_ist": "2026-04-16 21:35:22 IST",
-  "overall_status": "SOME_DOWN",
+  "run_id": "20260416-231038-IST",
+  "run_timestamp_utc": "2026-04-16T17:40:38Z",
+  "run_timestamp_ist": "2026-04-16 23:10:38 IST",
+  "overall_status": "ALL_UP",
   "targets": [
     {
       "name": "n8n (Yash)",
       "url": "https://n8n.yashlunawat.com",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 790,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 852,
       "http_status": 200,
       "ssl_days_remaining": 78,
       "ssl_expiry_date": "2026-07-04",
@@ -25,7 +25,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "790ms"
+          "detail": "852ms"
         },
         "keyword": {
           "status": "N/A",
@@ -55,9 +55,9 @@
       "name": "Rishiverse (Production)",
       "url": "https://rishiverse.rishihood.edu.in",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 190,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 261,
       "http_status": 200,
       "ssl_days_remaining": 63,
       "ssl_expiry_date": "2026-06-19",
@@ -72,7 +72,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "190ms"
+          "detail": "261ms"
         },
         "keyword": {
           "status": "N/A",
@@ -102,8 +102,8 @@
       "name": "Rishiverse (Test)",
       "url": "https://test.rishiverse.rishihood.edu.in",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
       "latency_ms": 447,
       "http_status": 200,
       "ssl_days_remaining": 72,
@@ -149,9 +149,9 @@
       "name": "Rishiverse API",
       "url": "https://rishiverse-api.rishihood.edu.in",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 847,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 890,
       "http_status": 200,
       "ssl_days_remaining": 51,
       "ssl_expiry_date": "2026-06-06",
@@ -166,7 +166,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "847ms"
+          "detail": "890ms"
         },
         "keyword": {
           "status": "N/A",
@@ -196,9 +196,9 @@
       "name": "API Test Portal",
       "url": "https://apitestportal.rishihood.edu.in",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 767,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 900,
       "http_status": 200,
       "ssl_days_remaining": 279,
       "ssl_expiry_date": "2027-01-20",
@@ -213,7 +213,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "767ms"
+          "detail": "900ms"
         },
         "keyword": {
           "status": "N/A",
@@ -242,44 +242,46 @@
     {
       "name": "Yash Portfolio",
       "url": "https://yashlunawat.com",
-      "status": "DOWN",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": null,
-      "http_status": null,
-      "ssl_days_remaining": null,
-      "ssl_expiry_date": null,
-      "redirect_chain": [],
-      "final_url": null,
+      "status": "UP",
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 656,
+      "http_status": 200,
+      "ssl_days_remaining": 75,
+      "ssl_expiry_date": "2026-07-01",
+      "redirect_chain": [
+        "https://yashlunawat.com/"
+      ],
+      "final_url": "https://www.yashlunawat.com/",
       "keyword_found": null,
       "json_keys_missing": null,
       "checks": {
         "http_status": {
-          "status": "FAIL",
-          "detail": "Timeout after 10s"
+          "status": "PASS",
+          "detail": "HTTP 200 (expected 200)"
         },
         "latency": {
-          "status": "FAIL",
-          "detail": "Timeout after 10s"
+          "status": "PASS",
+          "detail": "656ms"
         },
         "keyword": {
           "status": "N/A",
-          "detail": ""
+          "detail": "No keyword configured"
         },
         "ssl": {
-          "status": "N/A",
-          "detail": ""
+          "status": "PASS",
+          "detail": "Valid, expires in 75 days (2026-07-01)"
         },
         "redirect": {
-          "status": "N/A",
-          "detail": ""
+          "status": "PASS",
+          "detail": "Redirected via 1 hop(s) to https://www.yashlunawat.com/"
         },
         "json_schema": {
           "status": "N/A",
-          "detail": ""
+          "detail": "No JSON schema check configured"
         }
       },
-      "error": "Request timed out after 10s",
+      "error": null,
       "tags": [
         "yash",
         "portfolio"
@@ -289,9 +291,9 @@
       "name": "Subdomain Finder",
       "url": "https://subdomainfinder.yashlunawat.com",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 189,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 325,
       "http_status": 200,
       "ssl_days_remaining": 82,
       "ssl_expiry_date": "2026-07-08",
@@ -306,7 +308,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "189ms"
+          "detail": "325ms"
         },
         "keyword": {
           "status": "N/A",
@@ -335,9 +337,9 @@
       "name": "Air Quality Prediction",
       "url": "https://air-quality-prediction.yashlunawat.com/",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 275,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 319,
       "http_status": 200,
       "ssl_days_remaining": 82,
       "ssl_expiry_date": "2026-07-07",
@@ -352,7 +354,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "275ms"
+          "detail": "319ms"
         },
         "keyword": {
           "status": "N/A",
@@ -382,9 +384,9 @@
       "name": "Stock Analyser",
       "url": "https://stock-analysier.yashlunawat.com",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 285,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 286,
       "http_status": 200,
       "ssl_days_remaining": 78,
       "ssl_expiry_date": "2026-07-04",
@@ -399,7 +401,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "285ms"
+          "detail": "286ms"
         },
         "keyword": {
           "status": "N/A",
@@ -429,11 +431,11 @@
       "name": "Cup Scheduling Visualizer",
       "url": "https://cup-scheduling-visualizer.yashlunawat.com",
       "status": "UP",
-      "timestamp_utc": "2026-04-16T16:05:22Z",
-      "timestamp_ist": "2026-04-16 21:35:22 IST",
-      "latency_ms": 254,
+      "timestamp_utc": "2026-04-16T17:40:38Z",
+      "timestamp_ist": "2026-04-16 23:10:38 IST",
+      "latency_ms": 278,
       "http_status": 200,
-      "ssl_days_remaining": 82,
+      "ssl_days_remaining": 81,
       "ssl_expiry_date": "2026-07-07",
       "redirect_chain": [],
       "final_url": "https://cup-scheduling-visualizer.yashlunawat.com/",
@@ -446,7 +448,7 @@
         },
         "latency": {
           "status": "PASS",
-          "detail": "254ms"
+          "detail": "278ms"
         },
         "keyword": {
           "status": "N/A",
@@ -454,7 +456,7 @@
         },
         "ssl": {
           "status": "PASS",
-          "detail": "Valid, expires in 82 days (2026-07-07)"
+          "detail": "Valid, expires in 81 days (2026-07-07)"
         },
         "redirect": {
           "status": "PASS",
