@@ -12,14 +12,14 @@
     <div class="header-inner">
       <div class="header-left">
         <h1 class="site-title">Yash &amp; Rishihood — Service Status</h1>
-        <div class="last-updated">Last updated: 2026-04-24 05:27:58 IST</div>
+        <div class="last-updated">Last updated: 2026-04-24 08:49:05 IST</div>
       </div>
-      <div class="overall-badge overall-down">OUTAGE DETECTED</div>
+      <div class="overall-badge overall-up">ALL SYSTEMS OPERATIONAL</div>
     </div>
     <div class="status-summary">
-      <span class="summary-item summary-up">9 UP</span>
+      <span class="summary-item summary-up">10 UP</span>
       <span class="summary-item summary-degraded">0 DEGRADED</span>
-      <span class="summary-item summary-down">1 DOWN</span>
+      <span class="summary-item summary-down">0 DOWN</span>
       <span class="summary-item summary-total">of 10 targets</span>
     </div>
   </header>
@@ -39,7 +39,7 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>731ms</strong></span>
+      <span>Latency: <strong>721ms</strong></span>
       <span>SSL: <strong>71d</strong>
         <span class="ssl-expiry">exp 2026-07-04</span>
       </span>
@@ -54,7 +54,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">731ms</span>
+          <span class="check-detail">721ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -88,10 +88,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [877, 848, 786, 842, 804, 826, 697, 819, 818, 736, 778, 833, 741, 778, 788, 738, 731],
+              data: [848, 786, 842, 804, 826, 697, 819, 818, 736, 778, 833, 741, 778, 788, 738, 731, 721],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -120,18 +120,18 @@
       })();
       </script>
   </div>
-  <div class="target-card card-down">
+  <div class="target-card card-up">
     <div class="card-header">
       <div class="card-title">
         <a href="https://rishiverse.rishihood.edu.in" target="_blank" rel="noopener">Rishiverse (Production)</a>
         <div class="card-url">https://rishiverse.rishihood.edu.in</div>
         <div class="card-tags"><span class="tag">rishihood</span><span class="tag">frontend</span><span class="tag">production</span></div>
       </div>
-      <span class="badge badge-down">DOWN</span>
+      <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>9272ms</strong></span>
-      <span>SSL: <strong>56d</strong>
+      <span>Latency: <strong>239ms</strong></span>
+      <span>SSL: <strong>55d</strong>
         <span class="ssl-expiry">exp 2026-06-19</span>
       </span>
     </div>
@@ -143,9 +143,9 @@
           <span class="check-detail">HTTP 200 (expected 200)</span>
         </div>
         <div class="check-row">
-          <span class="chk-fail">✗</span>
+          <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">9272ms (fail threshold 2000ms)</span>
+          <span class="check-detail">239ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -155,7 +155,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">SSL</span>
-          <span class="check-detail">Valid, expires in 56 days (2026-06-19)</span>
+          <span class="check-detail">Valid, expires in 55 days (2026-06-19)</span>
         </div>
         <div class="check-row">
           <span class="chk-pass">✓</span>
@@ -179,10 +179,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [338, 250, 311, 219, 197, 178, 206, 373, 164, 356, 476, 310, 347, 376, 179, 187, 9272],
+              data: [250, 311, 219, 197, 178, 206, 373, 164, 356, 476, 310, 347, 376, 179, 187, 9272, 239],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -221,8 +221,8 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>543ms</strong></span>
-      <span>SSL: <strong>65d</strong>
+      <span>Latency: <strong>463ms</strong></span>
+      <span>SSL: <strong>64d</strong>
         <span class="ssl-expiry">exp 2026-06-28</span>
       </span>
     </div>
@@ -236,7 +236,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">543ms</span>
+          <span class="check-detail">463ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -246,7 +246,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">SSL</span>
-          <span class="check-detail">Valid, expires in 65 days (2026-06-28)</span>
+          <span class="check-detail">Valid, expires in 64 days (2026-06-28)</span>
         </div>
         <div class="check-row">
           <span class="chk-pass">✓</span>
@@ -270,10 +270,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [226, 625, 349, 237, 199, 243, 353, 441, 169, 367, 689, 418, 300, 266, 175, 360, 543],
+              data: [625, 349, 237, 199, 243, 353, 441, 169, 367, 689, 418, 300, 266, 175, 360, 543, 463],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -312,8 +312,8 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>779ms</strong></span>
-      <span>SSL: <strong>44d</strong>
+      <span>Latency: <strong>703ms</strong></span>
+      <span>SSL: <strong>43d</strong>
         <span class="ssl-expiry">exp 2026-06-06</span>
       </span>
     </div>
@@ -327,7 +327,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">779ms</span>
+          <span class="check-detail">703ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -337,7 +337,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">SSL</span>
-          <span class="check-detail">Valid, expires in 44 days (2026-06-06)</span>
+          <span class="check-detail">Valid, expires in 43 days (2026-06-06)</span>
         </div>
         <div class="check-row">
           <span class="chk-pass">✓</span>
@@ -361,10 +361,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [818, 843, 777, 852, 812, 835, 716, 870, 774, 791, 772, 906, 787, 764, 861, 760, 779],
+              data: [843, 777, 852, 812, 835, 716, 870, 774, 791, 772, 906, 787, 764, 861, 760, 779, 703],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -403,8 +403,8 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>795ms</strong></span>
-      <span>SSL: <strong>272d</strong>
+      <span>Latency: <strong>794ms</strong></span>
+      <span>SSL: <strong>271d</strong>
         <span class="ssl-expiry">exp 2027-01-20</span>
       </span>
     </div>
@@ -418,7 +418,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">795ms</span>
+          <span class="check-detail">794ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -428,7 +428,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">SSL</span>
-          <span class="check-detail">Valid, expires in 272 days (2027-01-20)</span>
+          <span class="check-detail">Valid, expires in 271 days (2027-01-20)</span>
         </div>
         <div class="check-row">
           <span class="chk-pass">✓</span>
@@ -452,10 +452,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [825, 821, 802, 862, 780, 849, 760, 833, 802, 752, 783, 876, 750, 758, 879, 858, 795],
+              data: [821, 802, 862, 780, 849, 760, 833, 802, 752, 783, 876, 750, 758, 879, 858, 795, 794],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -494,7 +494,7 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>227ms</strong></span>
+      <span>Latency: <strong>302ms</strong></span>
       <span>SSL: <strong>68d</strong>
         <span class="ssl-expiry">exp 2026-07-01</span>
       </span>
@@ -509,7 +509,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">227ms</span>
+          <span class="check-detail">302ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -543,10 +543,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [473, 583, 216, 463, 379, 464, 303, 432, 392, 380, 384, 640, 346, 325, 531, 364, 227],
+              data: [583, 216, 463, 379, 464, 303, 432, 392, 380, 384, 640, 346, 325, 531, 364, 227, 302],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -585,7 +585,7 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>199ms</strong></span>
+      <span>Latency: <strong>220ms</strong></span>
       <span>SSL: <strong>75d</strong>
         <span class="ssl-expiry">exp 2026-07-08</span>
       </span>
@@ -600,7 +600,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">199ms</span>
+          <span class="check-detail">220ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -634,10 +634,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [238, 206, 214, 228, 242, 137, 254, 262, 329, 240, 320, 326, 179, 149, 283, 278, 199],
+              data: [206, 214, 228, 242, 137, 254, 262, 329, 240, 320, 326, 179, 149, 283, 278, 199, 220],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -676,7 +676,7 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>197ms</strong></span>
+      <span>Latency: <strong>131ms</strong></span>
       <span>SSL: <strong>74d</strong>
         <span class="ssl-expiry">exp 2026-07-07</span>
       </span>
@@ -691,7 +691,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">197ms</span>
+          <span class="check-detail">131ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -725,10 +725,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [173, 251, 172, 239, 214, 233, 204, 275, 140, 322, 213, 381, 160, 218, 281, 222, 197],
+              data: [251, 172, 239, 214, 233, 204, 275, 140, 322, 213, 381, 160, 218, 281, 222, 197, 131],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -767,7 +767,7 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>167ms</strong></span>
+      <span>Latency: <strong>143ms</strong></span>
       <span>SSL: <strong>71d</strong>
         <span class="ssl-expiry">exp 2026-07-04</span>
       </span>
@@ -782,7 +782,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">167ms</span>
+          <span class="check-detail">143ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -816,10 +816,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [200, 287, 98, 242, 242, 245, 242, 323, 311, 246, 297, 238, 167, 177, 283, 228, 167],
+              data: [287, 98, 242, 242, 245, 242, 323, 311, 246, 297, 238, 167, 177, 283, 228, 167, 143],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -858,7 +858,7 @@
       <span class="badge badge-up">UP</span>
     </div>
     <div class="card-meta">
-      <span>Latency: <strong>174ms</strong></span>
+      <span>Latency: <strong>241ms</strong></span>
       <span>SSL: <strong>74d</strong>
         <span class="ssl-expiry">exp 2026-07-07</span>
       </span>
@@ -873,7 +873,7 @@
         <div class="check-row">
           <span class="chk-pass">✓</span>
           <span class="check-label">Latency</span>
-          <span class="check-detail">174ms</span>
+          <span class="check-detail">241ms</span>
         </div>
         <div class="check-row">
           <span class="chk-na">–</span>
@@ -907,10 +907,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ["3:36 ", "1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 "],
+            labels: ["1:37 ", "3:49 ", "5:04 ", "0:41 ", "7:13 ", "7:14 ", "7:45 ", "1:59 ", "9:33 ", "0:16 ", "5:57 ", "0:56 ", "5:06 ", "6:33 ", "3:27 ", "7:58 ", "9:05 "],
             datasets: [{
               label: 'Latency (ms)',
-              data: [184, 266, 253, 201, 147, 230, 162, 256, 214, 149, 238, 332, 178, 152, 144, 187, 174],
+              data: [266, 253, 201, 147, 230, 162, 256, 214, 149, 238, 332, 178, 152, 144, 187, 174, 241],
               borderColor: '#60a5fa',
               backgroundColor: 'rgba(96,165,250,0.1)',
               borderWidth: 1.5,
@@ -954,7 +954,7 @@
         
   <table class="uptime-table">
     <thead><tr><th>Target</th><th title="2026-03-26">03-26</th><th title="2026-03-27">03-27</th><th title="2026-03-28">03-28</th><th title="2026-03-29">03-29</th><th title="2026-03-30">03-30</th><th title="2026-03-31">03-31</th><th title="2026-04-01">04-01</th><th title="2026-04-02">04-02</th><th title="2026-04-03">04-03</th><th title="2026-04-04">04-04</th><th title="2026-04-05">04-05</th><th title="2026-04-06">04-06</th><th title="2026-04-07">04-07</th><th title="2026-04-08">04-08</th><th title="2026-04-09">04-09</th><th title="2026-04-10">04-10</th><th title="2026-04-11">04-11</th><th title="2026-04-12">04-12</th><th title="2026-04-13">04-13</th><th title="2026-04-14">04-14</th><th title="2026-04-15">04-15</th><th title="2026-04-16">04-16</th><th title="2026-04-17">04-17</th><th title="2026-04-18">04-18</th><th title="2026-04-19">04-19</th><th title="2026-04-20">04-20</th><th title="2026-04-21">04-21</th><th title="2026-04-22">04-22</th><th title="2026-04-23">04-23</th><th title="2026-04-24">04-24</th><th>30d Avg</th></tr></thead>
-    <tbody><tr><td>n8n (Yash)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="94.7%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>Rishiverse (Production)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-down" title="83.3%">●</td><td class="uptime-avg uptime-ok">99.1%</td></tr><tr><td>Rishiverse (Test)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="94.4%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>Rishiverse API</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="93.8%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>API Test Portal</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-warn" title="95.7%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="93.8%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.4%</td></tr><tr><td>Yash Portfolio</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="95.2%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-down" title="89.5%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="94.4%">●</td><td class="uptime-warn" title="94.1%">●</td><td class="uptime-warn" title="94.1%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-warn">98.3%</td></tr><tr><td>Subdomain Finder</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">100.0%</td></tr><tr><td>Air Quality Prediction</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">100.0%</td></tr><tr><td>Stock Analyser</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="95.2%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>Cup Scheduling Visualizer</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">100.0%</td></tr></tbody>
+    <tbody><tr><td>n8n (Yash)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="94.7%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>Rishiverse (Production)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-down" title="85.7%">●</td><td class="uptime-avg uptime-ok">99.2%</td></tr><tr><td>Rishiverse (Test)</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="94.4%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>Rishiverse API</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="93.8%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>API Test Portal</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-warn" title="95.7%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="93.8%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.4%</td></tr><tr><td>Yash Portfolio</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="95.2%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-down" title="89.5%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="94.4%">●</td><td class="uptime-warn" title="94.1%">●</td><td class="uptime-warn" title="94.1%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-warn">98.3%</td></tr><tr><td>Subdomain Finder</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">100.0%</td></tr><tr><td>Air Quality Prediction</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">100.0%</td></tr><tr><td>Stock Analyser</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-warn" title="95.2%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">99.7%</td></tr><tr><td>Cup Scheduling Visualizer</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-nodata" title="No data">–</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-ok" title="100.0%">●</td><td class="uptime-avg uptime-ok">100.0%</td></tr></tbody>
   </table>
       </div>
     </section>
