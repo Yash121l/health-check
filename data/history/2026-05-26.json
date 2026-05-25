@@ -476,5 +476,483 @@
         ]
       }
     ]
+  },
+  {
+    "run_id": "20260526-022858-IST",
+    "run_timestamp_utc": "2026-05-25T20:58:58Z",
+    "run_timestamp_ist": "2026-05-26 02:28:58 IST",
+    "overall_status": "SOME_DOWN",
+    "targets": [
+      {
+        "name": "n8n (Yash)",
+        "url": "https://n8n.yashlunawat.com",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 717,
+        "http_status": 200,
+        "ssl_days_remaining": 39,
+        "ssl_expiry_date": "2026-07-04",
+        "redirect_chain": [],
+        "final_url": "https://n8n.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "717ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 39 days (2026-07-04)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "tools",
+          "automation"
+        ]
+      },
+      {
+        "name": "Rishiverse (Production)",
+        "url": "https://rishiverse.rishihood.edu.in",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 214,
+        "http_status": 200,
+        "ssl_days_remaining": 85,
+        "ssl_expiry_date": "2026-08-18",
+        "redirect_chain": [],
+        "final_url": "https://rishiverse.rishihood.edu.in/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "214ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 85 days (2026-08-18)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "rishihood",
+          "frontend",
+          "production"
+        ]
+      },
+      {
+        "name": "Rishiverse (Test)",
+        "url": "https://test.rishiverse.rishihood.edu.in",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 499,
+        "http_status": 200,
+        "ssl_days_remaining": 33,
+        "ssl_expiry_date": "2026-06-28",
+        "redirect_chain": [],
+        "final_url": "https://test.rishiverse.rishihood.edu.in/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "499ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 33 days (2026-06-28)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "rishihood",
+          "frontend",
+          "test"
+        ]
+      },
+      {
+        "name": "Rishiverse API",
+        "url": "https://rishiverse-api.rishihood.edu.in",
+        "status": "DOWN",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": null,
+        "http_status": null,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": null,
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "FAIL",
+            "detail": "Timeout after 10s"
+          },
+          "latency": {
+            "status": "FAIL",
+            "detail": "Timeout after 10s"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": ""
+          },
+          "ssl": {
+            "status": "N/A",
+            "detail": ""
+          },
+          "redirect": {
+            "status": "N/A",
+            "detail": ""
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": ""
+          }
+        },
+        "error": "Request timed out after 10s",
+        "tags": [
+          "rishihood",
+          "api",
+          "production"
+        ]
+      },
+      {
+        "name": "API Test Portal",
+        "url": "https://apitestportal.rishihood.edu.in",
+        "status": "DOWN",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": null,
+        "http_status": null,
+        "ssl_days_remaining": null,
+        "ssl_expiry_date": null,
+        "redirect_chain": [],
+        "final_url": null,
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "FAIL",
+            "detail": "Timeout after 10s"
+          },
+          "latency": {
+            "status": "FAIL",
+            "detail": "Timeout after 10s"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": ""
+          },
+          "ssl": {
+            "status": "N/A",
+            "detail": ""
+          },
+          "redirect": {
+            "status": "N/A",
+            "detail": ""
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": ""
+          }
+        },
+        "error": "Request timed out after 10s",
+        "tags": [
+          "rishihood",
+          "api",
+          "test"
+        ]
+      },
+      {
+        "name": "Yash Portfolio",
+        "url": "https://yashlunawat.com",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 241,
+        "http_status": 200,
+        "ssl_days_remaining": 63,
+        "ssl_expiry_date": "2026-07-28",
+        "redirect_chain": [
+          "https://yashlunawat.com/"
+        ],
+        "final_url": "https://www.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "241ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 63 days (2026-07-28)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "Redirected via 1 hop(s) to https://www.yashlunawat.com/"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "portfolio"
+        ]
+      },
+      {
+        "name": "Subdomain Finder",
+        "url": "https://subdomainfinder.yashlunawat.com",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 183,
+        "http_status": 200,
+        "ssl_days_remaining": 43,
+        "ssl_expiry_date": "2026-07-08",
+        "redirect_chain": [],
+        "final_url": "https://subdomainfinder.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "183ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 43 days (2026-07-08)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "tools"
+        ]
+      },
+      {
+        "name": "Air Quality Prediction",
+        "url": "https://air-quality-prediction.yashlunawat.com/",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 194,
+        "http_status": 200,
+        "ssl_days_remaining": 42,
+        "ssl_expiry_date": "2026-07-07",
+        "redirect_chain": [],
+        "final_url": "https://air-quality-prediction.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "194ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 42 days (2026-07-07)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "ml",
+          "projects"
+        ]
+      },
+      {
+        "name": "Stock Analyser",
+        "url": "https://stock-analysier.yashlunawat.com",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 177,
+        "http_status": 200,
+        "ssl_days_remaining": 39,
+        "ssl_expiry_date": "2026-07-04",
+        "redirect_chain": [],
+        "final_url": "https://stock-analysier.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "177ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 39 days (2026-07-04)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "ml",
+          "projects"
+        ]
+      },
+      {
+        "name": "Cup Scheduling Visualizer",
+        "url": "https://cup-scheduling-visualizer.yashlunawat.com",
+        "status": "UP",
+        "timestamp_utc": "2026-05-25T20:58:58Z",
+        "timestamp_ist": "2026-05-26 02:28:58 IST",
+        "latency_ms": 89,
+        "http_status": 200,
+        "ssl_days_remaining": 42,
+        "ssl_expiry_date": "2026-07-07",
+        "redirect_chain": [],
+        "final_url": "https://cup-scheduling-visualizer.yashlunawat.com/",
+        "keyword_found": null,
+        "json_keys_missing": null,
+        "checks": {
+          "http_status": {
+            "status": "PASS",
+            "detail": "HTTP 200 (expected 200)"
+          },
+          "latency": {
+            "status": "PASS",
+            "detail": "89ms"
+          },
+          "keyword": {
+            "status": "N/A",
+            "detail": "No keyword configured"
+          },
+          "ssl": {
+            "status": "PASS",
+            "detail": "Valid, expires in 42 days (2026-07-07)"
+          },
+          "redirect": {
+            "status": "PASS",
+            "detail": "No redirect"
+          },
+          "json_schema": {
+            "status": "N/A",
+            "detail": "No JSON schema check configured"
+          }
+        },
+        "error": null,
+        "tags": [
+          "yash",
+          "tools",
+          "projects"
+        ]
+      }
+    ]
   }
 ]
