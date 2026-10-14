@@ -181,6 +181,17 @@ are made by the browser.
 
 ---
 
+## Analytics
+
+PostHog (US cloud), `app: health-check` on every event. The generated status page loads
+posthog-js straight from `us.i.posthog.com` (GitHub Pages has no server to proxy through) and
+captures pageviews, web vitals, replays with masked inputs, and `status_page_viewed` with the
+current up/degraded/down counts. Each Actions run sends one anonymous `health_check_run`
+(counts, overall status, duration), and `alert_dispatched` when a status change triggers alerts.
+Target names, URLs and error text are never sent. The public project key is
+`global.posthog_key` in `config/settings.yml`; set it to `""` to turn all of it off, or set
+`HEALTH_CHECK_TELEMETRY=0` to stop only the run events. Local runs send nothing.
+
 ## Troubleshooting
 
 ### Workflow never runs

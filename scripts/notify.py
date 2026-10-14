@@ -21,6 +21,8 @@ from typing import Dict, List, Optional, Tuple
 
 import requests
 
+from telemetry import capture
+
 # ── Path constants ────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
@@ -484,6 +486,14 @@ def main() -> None:
         send_telegram(tg_token, tg_chat_id, message)
     else:
         print("[notify.py] Telegram credentials not configured — skipping Telegram")
+
+    capture("alert_dispatched", {
+        "went_down": len(down_targets),
+        "degraded": len(degraded_targets),
+        "recovered": len(recovered_targets),
+        "email": bool(gmail_user and gmail_password and alert_email_to),
+        "telegram": bool(tg_token and tg_chat_id),
+    })
 
     # Mark as notified
     atomic_write_text(LAST_NOTIFIED_FILE, run_id)
