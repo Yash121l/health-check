@@ -25,6 +25,8 @@ import requests
 import yaml
 from OpenSSL import crypto
 
+from telemetry import capture
+
 # ── Path constants ────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_DIR = REPO_ROOT / "config"
@@ -530,6 +532,15 @@ def main() -> None:
         print(f"  {icon} {r['name']:<35} {r['status']:<10} {lat}")
 
     print(f"[check.py] Overall: {overall}")
+
+    capture("health_check_run", {
+        "targets_checked": len(target_results),
+        "up_count": statuses.count("UP"),
+        "degraded_count": statuses.count("DEGRADED"),
+        "down_count": statuses.count("DOWN"),
+        "overall_status": overall,
+        "duration_ms": int((datetime.now(timezone.utc) - now_utc).total_seconds() * 1000),
+    })
     sys.exit(0)
 
 

@@ -7,3 +7,6 @@ global:
   retention_days: 90
   dashboard_title: "Yash & Rishihood — Service Status"
   timezone: "Asia/Kolkata"
+  # PostHog public project key (safe to commit): status page analytics and one
+  # health_check_run event per Actions run. Empty string turns both off.
+  posthog_key: "phc_oLm8fb7L4CXDqGdJcc7a6boCtR8rVjf6dNx7G995eGdy"

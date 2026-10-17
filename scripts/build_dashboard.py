@@ -371,6 +371,14 @@ def build_html(latest: Dict, history: Dict[str, List[Dict]], settings: Dict) -> 
     down_count = sum(1 for t in targets if t["status"] == "DOWN")
     total_count = len(targets)
 
+    analytics_html = posthog_snippet(settings.get("posthog_key"), {
+        "overall_status": overall,
+        "up_count": up_count,
+        "degraded_count": deg_count,
+        "down_count": down_count,
+        "targets": total_count,
+    })
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -379,6 +387,7 @@ def build_html(latest: Dict, history: Dict[str, List[Dict]], settings: Dict) -> 
   <title>{e(title)}</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+{analytics_html}
 </head>
 <body>
   <header class="site-header">
@@ -428,6 +437,60 @@ def build_html(latest: Dict, history: Dict[str, List[Dict]], settings: Dict) -> 
   </footer>
 </body>
 </html>"""
+
+
+# ── Analytics ──────────────────────────────────────────────────────────────────
+
+POSTHOG_LOADER = (
+    '!function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(w'
+    'indow.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split("."'
+    ');2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.protot'
+    'ype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascri'
+    'pt",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.co'
+    'm","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script'
+    '")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog"'
+    ',u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!=='
+    'a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toStrin'
+    'g(1)+".people (stub)"},o="init capture register register_once unregister identif'
+    'y alias reset group set_config get_distinct_id get_session_id onFeatureFlags isF'
+    'eatureEnabled getFeatureFlag reloadFeatureFlags opt_in_capturing opt_out_capturi'
+    'ng has_opted_out_capturing startSessionRecording stopSessionRecording".split(" "'
+    '),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.po'
+    'sthog||[]);'
+)
+
+
+def posthog_snippet(key: Optional[str], props: Dict[str, Any]) -> str:
+    """posthog-js for the status page. Static hosting, so no proxy: straight to US cloud."""
+    if not key:
+        return ""
+    cfg = {
+        "api_host": "https://us.i.posthog.com",
+        "ui_host": "https://us.posthog.com",
+        "defaults": "2026-08-30",
+        "capture_pageview": True,
+        "capture_pageleave": True,
+        "autocapture": True,
+        "enable_heatmaps": True,
+        "capture_dead_clicks": True,
+        "capture_exceptions": True,
+        "capture_performance": {"web_vitals": True},
+        "session_recording": {"maskAllInputs": True},
+    }
+
+    def js(v: Any) -> str:
+        return json.dumps(v).replace("<", "\\u003c")
+
+    return (
+        "<script>\n"
+        'if(!/^(localhost|127\\.0\\.0\\.1)$/.test(location.hostname)){\n'
+        f"{POSTHOG_LOADER}\n"
+        f"posthog.init({js(key)},{js(cfg)});\n"
+        "posthog.register({app:'health-check'});\n"
+        f"posthog.capture('status_page_viewed',{js(props)});\n"
+        "}\n"
+        "</script>"
+    )
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
